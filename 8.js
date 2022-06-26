@@ -17,6 +17,14 @@ while (isNaN(num2)) {
     num2 = parseInt(prompt("Introduce numero 2: "));
 }
 
+// Falta validar la division by cero, en que parte se podria validar eso.... Recomendacion de escritura de Código
+while(num1 <0  || num2 < 0 || isNan(num1) || isNan(num2)){
+    alert('Numeros Incorrectos');
+    num1 = parseInt(prompt("Introduce numero 1: "));
+    num2 = parseInt(prompt("Introduce numero 2: "));
+}
+
+
 var sum = num1 + num2;
 var sub = num1 - num2;
 var mul = num1 * num2;
